@@ -5,6 +5,9 @@
                 
     ],
     "data": [
+        "views/clinic_park_menu.xml",
+        "views/clinic_park_view.xml",
+        
 
     ],
     "application": True,
