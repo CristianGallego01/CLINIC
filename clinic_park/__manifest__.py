@@ -5,6 +5,7 @@
                 
     ],
     "data": [
+        "security/ir.model.access.csv",
         "views/clinic_park_menus.xml",
         "views/clinic_park_views.xml",
         
