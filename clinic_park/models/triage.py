@@ -22,4 +22,4 @@ class ClinicParkTriage(models.Model):
         ("urgencia", "Urgencia"),
         ("consulta", "Consulta"),
         ("finalizado", "Finalizado"),
-    ],copy=False,required=True)
+    ],string="clasificacion",copy=False,required=True)
