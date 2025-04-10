@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!-- Vista Paciente -->
     <record id="view_clinic_park_patient_form" model="ir.ui.view">
         <field name="name">clinic.park.patient.form</field>
         <field name="model">clinic.park.patient</field>
         <field name="arch" type="xml">
             <form string="Paciente">
                 <sheet>
-                    <group>
+                    <group string="Datos del Paciente">
+                        <field name="current_date"/>
                         <field name="name"/>
                         <field name="age"/>
+                        <field name="dni"/>
+                        <field name="phone"/>
+                        <field name="email"/>
+                        <field name="address"/>
+                        <field name="birth_date"/>
+                        <field name="reason"/>
+                    </group>
+                    <group string="Datos del Acompañante">
+                        <field name="companion"/>
+                        <field name="companion_phone"/>
+                        <field name="siganture"/>
                     </group>
                 </sheet>
             </form>
@@ -19,9 +32,12 @@
         <field name="name">clinic.park.patient.tree</field>
         <field name="model">clinic.park.patient</field>
         <field name="arch" type="xml">
-            <tree string="Pacientes">
+            <tree string="Paciente">
                 <field name="name"/>
                 <field name="age"/>
+                <field name="dni"/>
+                <field name="phone"/>
+                <field name="email"/>
             </tree>
         </field>
     </record>
@@ -32,5 +48,55 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- Vista Triage -->
+    <record id="view_clinic_park_triage_form" model="ir.ui.view">
+        <field name="name">clinic.park.triage.form</field>
+        <field name="model">clinic.park.triage</field>
+        <field name="arch" type="xml">
+            <form string="Triage">
+                <sheet>
+                    <group string="Datos del Paciente">
+                        <field name="patient_id"/>
+                        <field name="current_date"/>
+                        <field name="reason"/>
+                        <field name="name" readonly="1"/>
+                        <field name="age" readonly="1"/>
+                        <field name="dni" readonly="1"/>
+                    </group>
+                    <group string="Signos Vitales">
+                        <field name="temperatura"/>
+                        <field name="pulso"/>
+                        <field name="presion"/>
+                        <field name="frecuencia_respiratoria"/>
+                    </group>
+                    <group string="Clasificación">
+                        <field name="atencion"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
+    <record id="view_clinic_park_triage_tree" model="ir.ui.view">
+        <field name="name">clinic.park.triage.tree</field>
+        <field name="model">clinic.park.triage</field>
+        <field name="arch" type="xml">
+            <tree string="Triage">
+                <field name="patient_id"/>
+                <field name="current_date"/>
+                <field name="reason"/>
+                <field name="temperatura"/>
+                <field name="pulso"/>
+                <field name="presion"/>
+                <field name="frecuencia_respiratoria"/>
+                <field name="atencion"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_clinic_park_triage" model="ir.actions.act_window">
+        <field name="name">Triage</field>
+        <field name="res_model">clinic.park.triage</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 </odoo>

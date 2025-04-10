@@ -5,7 +5,7 @@ class ClinicParkTriage(models.Model):
     _description = 'Triage'
     _inherit = ['mail.thread']
 
-    paciente_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True, ondelete='cascade')
+    patient_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True, ondelete='cascade')
     current_date= fields.Date(string='Fecha', default=fields.Date.context_today, required=True)
     reason = fields.Text(string='Motivo de Consulta', required=True)
     name = fields.Char(string='Nombre', related='paciente_id.name', store=True)
@@ -18,8 +18,9 @@ class ClinicParkTriage(models.Model):
     frecuencia_respiratoria = fields.Integer(string='Frecuencia Respiratoria', required=True)
     # clasificacion
     atencion = fields.Selection([  
-        ("cirugia", "Cirugia"),
-        ("urgencia", "Urgencia"),
-        ("consulta", "Consulta"),
-        ("finalizado", "Finalizado"),
+        ('consulta', 'Consulta'),
+        ('preparacion', 'Preparación Quirúrgica'),
+        ('cirugia', 'Cirugía'),
+        ('recuperacion', 'Recuperación y Hospitalización'),
+        ('facturacion', 'Facturación'),
     ],string="clasificacion",copy=False,required=True)
