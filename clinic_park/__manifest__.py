@@ -5,7 +5,7 @@
                 
     ],
     "data": [
-        "views/clinic_park_menu.xml",
+        "views/clinic_park_menus.xml",
         "views/clinic_park_view.xml",
         
 
