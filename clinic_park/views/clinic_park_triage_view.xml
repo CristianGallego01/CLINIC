@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-    <!-- FORM VIEW -->
+    <!-- FORM VIEW
     <record id="clinic_park_triage_form_view" model="ir.ui.view">
         <field name="name">clinic.park.triage.form</field>
         <field name="model">clinic.park.triage</field>
@@ -35,6 +35,26 @@
                 <field name="presion"/>
                 <field name="atencion"/>
             </tree>
+        </field>
+    </record> -->
+    <record id="view_triage_kanban" model="ir.ui.view">
+        <field name="name">clinic.park.triage.kanban</field>
+        <field name="model">clinic.park.triage</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="atencion">
+                <field name="atencion"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <strong><field name="name"/></strong>
+                            <br/>
+                            <field name="patient_id"/>
+                            <br/>
+                            <field name="atencion"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
         </field>
     </record>
 </odoo>
