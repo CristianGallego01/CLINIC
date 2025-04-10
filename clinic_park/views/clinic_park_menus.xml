@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Acción para acceder al módulo Triage -->
+    <!-- Acción para Pacientes -->
+    <record id="action_clinic_park_patient" model="ir.actions.act_window">
+        <field name="name">Pacientes</field>
+        <field name="res_model">clinic.park.patient</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>Aquí puedes gestionar los datos de los pacientes.</p>
+        </field>
+    </record>
+
+    <!-- Menú para Pacientes -->
+    <menuitem id="clinic_park_menu_patient"
+              name="Pacientes"
+              parent="clinic_park_menu_root"
+              action="action_clinic_park_patient"/>
+
+    <!-- Acción para Triage -->
     <record id="action_clinic_park_triage" model="ir.actions.act_window">
         <field name="name">Triage</field>
         <field name="res_model">clinic.park.triage</field>
-        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p>Aquí puedes gestionar los procesos médicos por paciente.</p>
         </field>
@@ -16,3 +32,4 @@
               parent="clinic_park_menu_root"
               action="action_clinic_park_triage"/>
 </odoo>
+
