@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-<>
     <!-- FORM VIEW -->
     <record id="clinic_park_triage_form_view" model="ir.ui.view">
         <field name="name">clinic.park.triage.form</field>
