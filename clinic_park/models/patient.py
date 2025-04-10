@@ -4,7 +4,7 @@ class ClinicParkPatient(models.Model):
     _name = 'clinic.park.patient'
     _description = 'Paciente'
 
-    triage_ids = fields.One2many('clinic.park.triage', 'paciente_id', string='Triage')
+    triage_id = fields.One2many('clinic.park.triage', 'patient_id', string='Triage')
     # datos del paciente
     current_date = fields.Date(string='Fecha Actual', default=fields.Date.context_today, required=True)
     name = fields.Char(string='Nombre', required=True)
