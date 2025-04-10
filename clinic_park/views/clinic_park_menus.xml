@@ -1,8 +1,11 @@
-<?xml version="1.0"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <menuitem id="clinc_park_menu_root" name="Clinic Park">
-        <menuitem id="clinic_park_first_level_menu" name="patients" >
-            <menuitem id="clinic_park_model_menu" action="clinic_park_action"/>
-        </menuitem>
-    </menuitem>
+    <menuitem id="clinic_park_menu_root" name="Clinic Park"/>
+    
+    <menuitem id="clinic_park_patient_menu" name="Pacientes" parent="clinic_park_menu_root"/>
+
+    <menuitem id="clinic_park_menu_action"
+            name="Gestionar Pacientes"
+            parent="clinic_park_patient_menu"
+            action="action_clinic_park_patient"/>
 </odoo>
