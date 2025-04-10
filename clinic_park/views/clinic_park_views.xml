@@ -9,7 +9,6 @@
                     <group>
                         <field name="name"/>
                         <field name="age"/>
-                        <field name="gender"/>
                     </group>
                 </sheet>
             </form>
@@ -23,7 +22,6 @@
             <tree string="Pacientes">
                 <field name="name"/>
                 <field name="age"/>
-                <field name="gender"/>
             </tree>
         </field>
     </record>
