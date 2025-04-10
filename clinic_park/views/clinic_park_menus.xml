@@ -1,5 +1,8 @@
 <?xml version="1.0"?> 
 <odoo>
-    <menuitem id="menu_clinic_park_root" name="Clinic Park"/>
-        <menuitem id="menu_clinic_park" name="Clinic Park" parent="menu_clinic_park_root" />
+    <menuitem id="clinc_park_menu_root" name="Clinic Park">
+        <menuitem id="clinic_park_first_level_menu" name="patients" >
+            <menuitem id="clinic_park_model_menu" action="clinic_park_action"/>
+        </menuitem>
+    </menuitem>
 </odoo>
