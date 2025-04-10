@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- Menú raíz -->
+    <menuitem id="clinic_park_menu_root" name="Clinic Park" sequence="10"/>
+
     <!-- Acción para Pacientes -->
     <record id="action_clinic_park_patient" model="ir.actions.act_window">
         <field name="name">Pacientes</field>
@@ -32,4 +35,3 @@
               parent="clinic_park_menu_root"
               action="action_clinic_park_triage"/>
 </odoo>
-
