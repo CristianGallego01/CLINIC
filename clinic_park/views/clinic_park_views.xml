@@ -2,7 +2,7 @@
 <odoo>
     <record id="clinic_park_action" model="ir.actions.act_window">
         <field name="name">Patients</field>
-        <field name="res_model">clinic.patient</field>
+        <field name="res_model">clinic.park.patient</field>
         <field name="view_mode">tree,form</field>
     </record>
 </odoo>
