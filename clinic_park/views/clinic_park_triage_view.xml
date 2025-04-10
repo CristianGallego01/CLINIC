@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-    <record id="clinic_park_triage_view" model="ir.ui.view">
-        <field name="name">clinic.park.triage.view</field>
+<>
+    <!-- FORM VIEW -->
+    <record id="clinic_park_triage_form_view" model="ir.ui.view">
+        <field name="name">clinic.park.triage.form</field>
         <field name="model">clinic.park.triage</field>
         <field name="arch" type="xml">
             <form string="Triage">
@@ -19,6 +21,13 @@
                     </group>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="clinic_park_triage_tree_view" model="ir.ui.view">
+        <field name="name">clinic.park.triage.tree</field>
+        <field name="model">clinic.park.triage</field>
+        <field name="arch" type="xml">
             <tree string="Triajes">
                 <field name="patient_id"/>
                 <field name="current_date"/>
@@ -30,5 +39,4 @@
             </tree>
         </field>
     </record>
-
 </odoo>
