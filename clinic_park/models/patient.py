@@ -1,8 +1,8 @@
 from odoo import models, fields, api
 
-class Patient(models.Model):
+class ClinicParkPatient(models.Model):
     _name = 'clinic.park.patient'
-    _description = 'Patient'
+    _description = 'Paciente'
 
     # datos del paciente
     current_date = fields.Date(string='Fecha Actual', default=fields.Date.context_today, required=True)
