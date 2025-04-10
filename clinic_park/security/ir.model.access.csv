@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_clinic_park_patient,access.clinic.park.patient,model_clinic_park_patient,base.group_user,1,1,1,1
+access_clinic_park_triage,access.clinic.park.triage,model_clinic_park_triage,base.group_user,1,1,1,1
