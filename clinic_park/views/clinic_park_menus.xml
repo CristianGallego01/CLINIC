@@ -3,15 +3,14 @@
     <!-- Menú raíz -->
     <menuitem id="clinic_park_menu_root" name="Clinic Park"/>
 
-    <!-- Submenú de Pacientes -->
+    <!-- Submenú de pacientes -->
     <menuitem id="clinic_park_menu_patient"
-            name="Pacientes"
-            parent="clinic_park_menu_root"
-            action="action_clinic_park_patient"/>
+              name="Pacientes"
+              parent="clinic_park_menu_root"
+              action="action_clinic_park_patient"/>
 
-    <!-- Submenú de Triage -->
     <menuitem id="clinic_park_menu_triage"
-            name="Triage"
-            parent="clinic_park_menu_root"
-            action="action_clinic_park_triage"/>
+              name="Triage"
+              parent="clinic_park_menu_root"
+              action="action_clinic_park_triage">
 </odoo>
