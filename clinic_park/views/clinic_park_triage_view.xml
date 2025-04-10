@@ -15,7 +15,6 @@
                         <field name="temperatura"/>
                         <field name="pulso"/>
                         <field name="presion"/>
-                        <field name="frecuencia_respiratoria"/>
                         <field name="atencion"/>
                     </group>
                 </sheet>

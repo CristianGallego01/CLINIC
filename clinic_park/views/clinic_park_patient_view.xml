@@ -22,7 +22,7 @@
                         <field name="companion_phone"/>
                     </group>
                     <group>
-                        <field name="siganture"/>
+                        <field name="siganture" widget="siganture"/>
                     </group>
                     <notebook>
                         <page string="Triajes">

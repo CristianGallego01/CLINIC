@@ -15,7 +15,6 @@ class ClinicParkTriage(models.Model):
     temperatura = fields.Float(string='Temperatura', required=True)
     pulso = fields.Integer(string='Pulso', required=True)
     presion = fields.Char(string='Presion', required=True)
-    frecuencia_respiratoria = fields.Integer(string='Frecuencia Respiratoria', required=True)
     # clasificacion
     atencion = fields.Selection([  
         ('consulta', 'Consulta'),
