@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
 class ClinicParkPatient(models.Model):
     _name = 'clinic.park.patient'
