@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="clinic_park_patient_view" model="ir.ui.view">
-        <field name="name">clinic.park.patient.view</field>
+    <record id="clinic_park_patient_form_view" model="ir.ui.view">
+        <field name="name">clinic.park.patient.form</field>
         <field name="model">clinic.park.patient</field>
         <field name="arch" type="xml">
             <form string="Paciente">
@@ -27,7 +27,7 @@
                     <notebook>
                         <page string="Triajes">
                             <field name="triage_id">
-                                <tree>
+                                <tree editable="bottom">
                                     <field name="current_date"/>
                                     <field name="reason"/>
                                     <field name="temperatura"/>
@@ -40,6 +40,12 @@
                     </notebook>
                 </sheet>
             </form>
+        </field>
+    </record>
+    <record id="clinic_park_patient_tree_view" model="ir.ui.view">
+        <field name="name">clinic.park.patient.tree</field>
+        <field name="model">clinic.park.patient</field>
+        <field name="arch" type="xml">
             <tree string="Pacientes">
                 <field name="name"/>
                 <field name="age"/>
