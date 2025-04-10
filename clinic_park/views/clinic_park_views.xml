@@ -32,6 +32,5 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="clinic_park_menu_root" name="Clinic Park"/>
-    <menuitem id="clinic_park_menu_patient" name="Pacientes" parent="clinic_park_menu_root" action="action_clinic_park_patient"/>
+
 </odoo>
