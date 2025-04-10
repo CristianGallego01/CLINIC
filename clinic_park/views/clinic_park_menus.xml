@@ -7,7 +7,7 @@
     <record id="action_clinic_park_patient" model="ir.actions.act_window">
         <field name="name">Pacientes</field>
         <field name="res_model">clinic.park.patient</field>
-        <field name="view_mode">kanban,tree,form,</field>
+        <field name="view_mode">,tree,form,</field>
         <field name="help" type="html">
             <p>Aquí puedes gestionar los datos de los pacientes.</p>
         </field>
@@ -23,7 +23,7 @@
     <record id="action_clinic_park_triage" model="ir.actions.act_window">
         <field name="name">Triage</field>
         <field name="res_model">clinic.park.triage</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">kanba,tree,form</field>
         <field name="help" type="html">
             <p>Aquí puedes gestionar los procesos médicos por paciente.</p>
         </field>
