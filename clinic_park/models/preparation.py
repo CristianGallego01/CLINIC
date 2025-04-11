@@ -20,13 +20,3 @@ class ClinicParkPreparation(models.Model):
     preparation_date = fields.Datetime(string='Fecha de Preparación', required=True)
     patient_signature = fields.Binary(string='Firma del Paciente', required=True)
 
-    @fields.depends('checklist_consent', 'checklist_exams', 'checklist_equipment', 'checklist_allergies', 'checklist_documents')
-    def _compute_checklist_verified(self):
-        for rec in self:
-            rec.checklist_verified = all([
-                rec.checklist_consent,
-                rec.checklist_exams,
-                rec.checklist_equipment,
-                rec.checklist_allergies,
-                rec.checklist_documents
-            ])
