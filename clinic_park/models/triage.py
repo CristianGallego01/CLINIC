@@ -24,3 +24,29 @@ class ClinicParkTriage(models.Model):
         ('facturacion', 'F.Facturación'),
     ],default="por clasificar",string="clasificacion",copy=False,required=True)
 
+    patient_id = fields.Many2one('clinic.park.patient', string='Paciente')
+
+    @api.model
+    def create(self, vals):
+        record = super().create(vals)
+        if vals.get('clasificacion') == 'consulta':
+            record._crear_consulta_si_aplica()
+        return record
+
+    def write(self, vals):
+        res = super().write(vals)
+        if 'clasificacion' in vals and vals['clasificacion'] == 'consulta':
+            for record in self:
+                record._crear_consulta_si_aplica()
+        return res
+
+    def _crear_consulta_si_aplica(self):
+        self.ensure_one()
+        Consulta = self.env['clinic.park.consultations']
+        ya_existe = Consulta.search([('triage_id', '=', self.id)], limit=1)
+        if not ya_existe:
+            Consulta.create({
+                'triage_id': self.id,
+                'patient_id': self.patient_id.id,
+            })
+
