@@ -22,5 +22,18 @@
                 </sheet>
             </form>
         </field>
+        </record>
+    <record id="clinic_park_invoice_tree_view" model="ir.ui.view">
+        <field name="name">clinic.park.invoice.tree</field>
+        <field name="model">clinic.park.invoice</field>
+        <field name="arch" type="xml">
+            <tree string="Altas Clínicas Facturadas">
+                <field name="name"/>
+                <field name="patient_id"/>
+                <field name="total_amount"/>
+                <field name="state"/>
+                <field name="invoice_id"/>
+            </tree>
+        </field>
     </record>
 </odoo>
