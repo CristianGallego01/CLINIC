@@ -20,3 +20,14 @@ class ClinicParkPreparation(models.Model):
     preparation_date = fields.Datetime(string='Fecha de Preparación', required=True)
     patient_signature = fields.Binary(string='Firma del Paciente')
 
+    def action_ir_a_cirugia(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Cirugía',
+            'res_model': 'clinic.park.surgery',
+            'view_mode': 'form',
+            'target': 'current',
+            'context': {
+                'default_patient_id': self.patient_id.id,
+            }
+        }

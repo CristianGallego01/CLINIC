@@ -15,7 +15,7 @@ class ClinicParkConsultation(models.Model):
     tratamiento = fields.Text(string='Tratamiento Prescrito')
     procedimientos = fields.Text(string='Procedimientos Recomendados')
 
-    def action_ir_a_cirugia(self):
+    def action_ir_a_preparacion(self):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Cirugía',

@@ -6,6 +6,12 @@
         <field name="model">clinic.park.surgery</field>
         <field name="arch" type="xml">
             <form string="Cirugía">
+                <header>
+                    <button name="action_ir_a_cirugia"
+                            type="object"
+                            string="Ir a Cirugía"
+                            class="btn-primary"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="triage_id"/>
