@@ -17,7 +17,7 @@ class ClinicParkConsultation(models.Model):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Cirugía',
-            'res_model': 'clinic.park.cirugia',
+            'res_model': 'clinic.park.cirugisurgery',
             'view_mode': 'form',
             'target': 'current',
             'context': {
@@ -30,7 +30,7 @@ class ClinicParkConsultation(models.Model):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Procedimientos',
-            'res_model': 'clinic.park.procedimiento',
+            'res_model': 'clinic.park.procedure',
             'view_mode': 'form',
             'target': 'current',
             'context': {
