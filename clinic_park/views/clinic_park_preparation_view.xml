@@ -15,7 +15,7 @@
                         <field name="preoperative_form"/>
                         <field name="nurse_signature" widget="signature"/>
                         <field name="patient_signature" widget="signature"/>
-                        <field name="observations"/>
+                        
                     </group>
                     <group string="Lista de Chequeo Preoperatoria">
                         <field name="checklist_consent"/>
