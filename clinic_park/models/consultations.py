@@ -19,12 +19,13 @@ class ClinicParkConsultation(models.Model):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Cirugía',
-            'res_model': 'clinic.park.cirugisurgery',
+            'res_model': 'clinic.park.preparation',
             'view_mode': 'form',
             'target': 'current',
             'context': {
-                'default_patient_id': self.patient_id.id,
-                'default_triage_id': self.triage_id.id,
+            'default_patient_id': self.patient_id.id,
+            'default_triage_id': self.triage_id.id,
+            'default_consultation_id': self.id,
             }
         }
 

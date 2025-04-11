@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="clinic_park_preparation_form_view" model="ir.ui.view">
+        <field name="name">clinic.park.preparation.form</field>
+        <field name="model">clinic.park.preparation</field>
+        <field name="arch" type="xml">
+            <form string="Preparación Quirúrgica">
+                <sheet>
+                    <group>
+                        <field name="consultation_id"/>
+                        <field name="patient_id"/>
+                        <field name="triage_id"/>
+                        <field name="preoperative_form"/>
+                        <field name="nurse_signature"/>
+                        <field name="checklist_verified"/>
+                        <field name="observations"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="clinic_park_preparation_tree_view" model="ir.ui.view">
+        <field name="name">clinic.park.preparation.tree</field>
+        <field name="model">clinic.park.preparation</field>
+        <field name="arch" type="xml">
+            <tree string="Preparaciones Quirúrgicas">
+                <field name="consultation_id"/>
+                <field name="patient_id"/>
+                <field name="preoperative_form"/>
+                <field name="nurse_signature"/>
+                <field name="checklist_verified"/>
+            </tree>
+        </field>
+    </record>  
+</odoo>

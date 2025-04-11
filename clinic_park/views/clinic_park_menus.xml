@@ -56,4 +56,15 @@
           name="procedimientos"
           parent="clinic_park_menu_root"
           action="action_clinic_park_procedure"/>
+
+        <record id="action_clinic_park_preparation" model="ir.actions.act_window">
+        <field name="name">preparacion quirurgica</field>
+        <field name="res_model">clinic.park.preparation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="clinic_park_menu_preparation"
+          name="preparacion quirurgica"
+          parent="clinic_park_menu_root"
+          action="action_clinic_park_preparation"/>
 </odoo>
