@@ -33,20 +33,30 @@ class ClinicParkTriage(models.Model):
             record._crear_consulta_si_aplica()
         return record
 
-def write(self, vals):
-    anterior_clasificacion = self.mapped('atencion')
-    res = super().write(vals)
+    def write(self, vals):
+        anterior_clasificacion = self.mapped('atencion')
+        res = super().write(vals)
 
-    for record, anterior in zip(self, anterior_clasificacion):
-        nueva = vals.get('atencion', record.atencion)
-        
-        # Si cambió de 'consulta' a otra cosa → eliminar consulta
-        if anterior == 'consulta' and nueva != 'consulta':
-            consulta = self.env['clinic.park.consultations'].search([('triage_id', '=', record.id)])
-            consulta.unlink()
+        for record, anterior in zip(self, anterior_clasificacion):
+            nueva = vals.get('atencion', record.atencion)
 
-        # Si cambió a 'consulta' → crear consulta
-        if anterior != 'consulta' and nueva == 'consulta':
-            record._crear_consulta_si_aplica()
+            # Si cambió de 'consulta' a otra → eliminar consulta
+            if anterior == 'consulta' and nueva != 'consulta':
+                consulta = self.env['clinic.park.consultations'].search([('triage_id', '=', record.id)])
+                consulta.unlink()
 
-    return res
+            # Si cambió a 'consulta' → crear consulta
+            if anterior != 'consulta' and nueva == 'consulta':
+                record._crear_consulta_si_aplica()
+
+        return res
+
+    def _crear_consulta_si_aplica(self):
+        self.ensure_one()
+        Consulta = self.env['clinic.park.consultations']
+        ya_existe = Consulta.search([('triage_id', '=', self.id)], limit=1)
+        if not ya_existe:
+            Consulta.create({
+                'triage_id': self.id,
+                'patient_id': self.patient_id.id,
+            })
