@@ -9,6 +9,7 @@
                     <group>
                         <field name="patient_id" string="Nombre"/>
                         <field name="procedimiento"/>
+                        <field name="procedure_date" string="Fecha de Procedimiento"/>
                         <field name="description"/>
                         <field name="costo"/>
                     </group>
