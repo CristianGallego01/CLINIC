@@ -4,3 +4,4 @@ from . import consultations
 from . import surgery
 from . import procedure
 from . import preparation
+from . import recovery
