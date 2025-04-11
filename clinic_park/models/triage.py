@@ -109,7 +109,7 @@ class ClinicParkTriage(models.Model):
 
     def _crear_preparacion_si_aplica(self):
         self.ensure_one()
-        Preparacion = self.env['clinic.park.prepared']
+        Preparacion = self.env['clinic.park.preparation']
         ya_existe = Preparacion.search([('triage_id', '=', self.id)], limit=1)
         if not ya_existe:
             Preparacion.create({
