@@ -9,7 +9,8 @@
                     <button name="action_ir_a_cirugia"
                             type="object"
                             string="Ir a Cirugía"
-                            class="btn-primary"/>
+                            class="btn-primary"
+                            icon="fa-heartbeat"/>
                 </header>
                 <sheet>
                     <group>
