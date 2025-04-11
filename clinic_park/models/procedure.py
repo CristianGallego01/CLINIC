@@ -4,6 +4,7 @@ class ClinicParkProcedure(models.Model):
     _name = 'clinic.park.procedure'
     _description = 'Procedimiento'
 
+    triage_id = fields.Many2one('clinic.park.triage', string='Triage')
     patient_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True)
     consultations_id = fields.Many2one('clinic.park.consultations', string='Consulta', required=True)
     name = fields.Char(string='Nombre', related='patient_id.name', store=True)
