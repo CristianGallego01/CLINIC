@@ -14,7 +14,7 @@ class ClinicParkCirugia(models.Model):
     surgery_date = fields.Datetime(string='Fecha de Cirugía')
     documents = fields.Binary(string='Documento Quirúrgico')
     vital_signs_notes = fields.Binary(string='Signos Vitales Intraoperatorios')
-    anesthesia_type = fields.select([
+    anesthesia_type = fields.selection([
         ('general', 'General'),
         ('local', 'Local'),
     ], string='Tipo de Anestesia', required=True)
