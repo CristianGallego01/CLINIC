@@ -41,8 +41,8 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_clinic_park_consultations"
+    <menuitem id="clinic_park_menu_consultations"
           name="Consultas"
-          parent="clinic_park.menu_clinic_root"
+          parent="clinic_park_menu_root"
           action="action_clinic_park_consultations"/>
 </odoo>
