@@ -89,4 +89,16 @@
     <menuitem id="clinic_park_menu_recovery" name="recuperacion"
               parent="clinic_park_menu_root"
               action="action_clinic_park_recovery"/>
+    
+    <record id="action_clinic_park_bill" model="ir.actions.act_window">
+        <field name="name">alta y facturacion</field>
+        <field name="res_model">clinic.park.bill</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú -->
+    <menuitem id="clinic_park_menu_bill" name="alta y facturacion"
+              parent="clinic_park_menu_root"
+              action="action_clinic_park_bill"/>
+</odoo>
 </odoo>
