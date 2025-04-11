@@ -16,14 +16,13 @@
                         <field name="address"/>
                         <field name="birth_date"/>
                         <field name="reason"/>
+                        <field name="siganture" widget="siganture"/>
                     </group>
                     <group string="Acompañante">
                         <field name="companion"/>
                         <field name="companion_phone"/>
                     </group>
-                    <group>
-                        <field name="siganture" widget="siganture"/>
-                    </group>
+
                     <notebook>
                         <page string="Triajes">
                             <field name="triage_id">
