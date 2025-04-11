@@ -12,6 +12,7 @@
         'views/clinic_park_preparation_view.xml',
         'views/clinic_park_surgery_view.xml',
         'views/clinic_park_recovery_view.xml',
+        'views/clinic_park_bill_view.xml',
 
 
 
