@@ -5,4 +5,4 @@ from . import surgery
 from . import procedure
 from . import preparation
 from . import recovery
-from . import bill
+from . import invoice
