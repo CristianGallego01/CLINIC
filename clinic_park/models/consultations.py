@@ -38,6 +38,8 @@ class ClinicParkConsultation(models.Model):
             'context': {
                 'default_patient_id': self.patient_id.id,
                 'default_triage_id': self.triage_id.id,
+                'default_consultations_id': self.id,  # Muy importante para enlazarlo con la consulta
+                'default_procedimiento': self.procedimientos,  # Este es el texto del procedimiento recomendado
             }
         }
     @api.onchange('triage_id')
