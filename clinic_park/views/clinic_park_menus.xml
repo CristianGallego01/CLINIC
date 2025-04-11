@@ -100,5 +100,5 @@
     <menuitem id="clinic_park_menu_bill" name="alta y facturacion"
               parent="clinic_park_menu_root"
               action="action_clinic_park_bill"/>
-</odoo>
+
 </odoo>
