@@ -38,3 +38,7 @@ class ClinicParkConsultation(models.Model):
                 'default_triage_id': self.triage_id.id,
             }
         }
+    @api.onchange('triage_id')
+    def _onchange_triage_id(self):
+        if self.triage_id and self.triage_id.clasificacion == 'consulta':
+            self.patient_id = self.triage_id.patient_id
