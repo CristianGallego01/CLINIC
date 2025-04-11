@@ -18,7 +18,7 @@ class ClinicParkConsultation(models.Model):
     def action_ir_a_preparacion(self):
         return {
             'type': 'ir.actions.act_window',
-            'name': 'Cirugía',
+            'name': 'preparacion',
             'res_model': 'clinic.park.preparation',
             'view_mode': 'form',
             'target': 'current',
