@@ -45,4 +45,15 @@
           name="Consultas"
           parent="clinic_park_menu_root"
           action="action_clinic_park_consultations"/>
+
+    <record id="action_clinic_park_procedure" model="ir.actions.act_window">
+        <field name="name">procedimientos</field>
+        <field name="res_model">clinic.park.procedure</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="clinic_park_menu_procedure"
+          name="procedimientos"
+          parent="clinic_park_menu_root"
+          action="action_clinic_park_procedure"/>
 </odoo>
