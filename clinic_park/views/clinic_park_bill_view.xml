@@ -6,6 +6,20 @@
         <field name="model">clinic.park.bill</field>
         <field name="arch" type="xml">
             <form string="Alta y Facturación">
+                <header>
+                    <t t-if="record.state.raw_value == 'draft'">
+                        <button name="action_send_to_recovery"
+                                string="Enviar a Recuperación"
+                                type="object"
+                                class="btn-primary"/>
+                    </t>
+                    <t t-if="record.state.raw_value == 'recovery'">
+                        <button name="action_mark_billed"
+                                string="Marcar como Facturado"
+                                type="object"
+                                class="btn-success"/>
+                    </t>
+                </header>
                 <sheet>
                     <group>
                         <field name="patient_id"/>
@@ -17,11 +31,6 @@
                         <field name="state" readonly="1"/>
                         <field name="invoice_id" readonly="1"/>
                     </group>
-                    <footer>
-                        <button name="action_consolidar" type="object" string="Consolidar Información" class="btn-primary"/>
-                        <button name="action_confirmar_alta" type="object" string="Confirmar Alta" class="btn-success" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
-                        <button name="action_generar_factura" type="object" string="Generar Factura" class="btn-secondary" attrs="{'invisible': [('state', '!=', 'done')]}"/>
-                    </footer>
                 </sheet>
             </form>
         </field>

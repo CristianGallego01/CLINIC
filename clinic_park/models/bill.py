@@ -64,3 +64,13 @@ class ClinicParkBill(models.Model):
 
     def action_confirmar_alta(self):
         self.state = 'done'
+
+    # Botón: Enviar a recuperación
+    def action_send_to_recovery(self):
+        for record in self:
+            record.state = 'recovery'
+
+    # Botón: Marcar como facturado
+    def action_mark_billed(self):
+        for record in self:
+            record.state = 'billed'
