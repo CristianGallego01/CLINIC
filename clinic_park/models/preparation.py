@@ -8,8 +8,8 @@ class ClinicParkPreparation(models.Model):
     triage_id = fields.Many2one('clinic.park.triage', string='Triage')
     consultation_id = fields.Many2one('clinic.park.consultations', string='Consulta')
 
-    preoperative_form = fields.Text(string='Formulario Preoperatorio', required=True)
-    supplies = fields.Text(string='Insumos Utilizados', required=True)
+    preoperative_form = fields.Text(string='Formulario Preoperatorio')
+    supplies = fields.Text(string='Insumos Utilizados' )
     nurse_signature = fields.Binary(string='Firma de enfermeria')
     checklist_consent = fields.Boolean(string='Consentimiento informado firmado')
     checklist_exams = fields.Boolean(string='Exámenes preoperatorios revisados')
@@ -17,7 +17,7 @@ class ClinicParkPreparation(models.Model):
     checklist_allergies = fields.Boolean(string='Alergias conocidas verificadas')
     checklist_documents = fields.Boolean(string='Documentación completa')
 
-    preparation_date = fields.Datetime(string='Fecha de Preparación', required=True)
+    preparation_date = fields.Datetime(string='Fecha de Preparación' )
     patient_signature = fields.Binary(string='Firma del Paciente')
 
     def action_ir_a_cirugia(self):
