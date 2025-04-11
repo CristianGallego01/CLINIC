@@ -5,14 +5,9 @@
         <field name="model">clinic.park.preparation</field>
         <field name="arch" type="xml">
             <form string="Preparación Quirúrgica">
-                <header>
-                    <button name="action_ir_a_cirugia"
-                            string="Ir a Cirugía"
-                            type="object"
-                            string="Ir a Cirugía"
-                            class="btn-primary"
-                            icon="fa-heartbeat"/>
-                </header>
+                <header> 
+                <!-- boton para ir a la cirugía -->
+                    <button name="action_ir_a_cirugia" string="Ir a Cirugía" type="object" class="btn-primary" icon="fa-heartbeat"/>
                 <sheet>
                     <group>
                         <field name="consultation_id"/>
