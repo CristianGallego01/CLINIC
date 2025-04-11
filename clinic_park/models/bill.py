@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
-class ClinicParkBilling(models.Model):
-    _name = 'clinic.park.billing'
+class ClinicParkBill(models.Model):
+    _name = 'clinic.park.bill'
     _description = 'Alta y Facturación'
 
     patient_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True)

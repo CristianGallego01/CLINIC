@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-    <record id="view_clinic_park_billing_form" model="ir.ui.view">
-        <field name="name">clinic.park.billing.form</field>
-        <field name="model">clinic.park.billing</field>
+    <record id="view_clinic_park_bill_form" model="ir.ui.view">
+        <field name="name">clinic.park.bill.form</field>
+        <field name="model">clinic.park.bill</field>
         <field name="arch" type="xml">
             <form string="Alta y Facturación">
                 <sheet>
@@ -27,9 +27,9 @@
         </field>
     </record>
 
-    <record id="view_clinic_park_billing_tree" model="ir.ui.view">
-        <field name="name">clinic.park.billing.tree</field>
-        <field name="model">clinic.park.billing</field>
+    <record id="view_clinic_park_bill_tree" model="ir.ui.view">
+        <field name="name">clinic.park.bill.tree</field>
+        <field name="model">clinic.park.bill</field>
         <field name="arch" type="xml">
             <tree string="Altas y Facturación">
                 <field name="patient_id"/>
