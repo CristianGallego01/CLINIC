@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <record id="view_clinic_park_procedure_form" model="ir.ui.view">
+        <field name="name">clinic.park.procedure.form</field>
+        <field name="model">clinic.park.procedure</field>
+        <field name="arch" type="xml">
+            <form string="Procedimiento">
+                <sheet>
+                    <group>
+                        <field name="procedimiento"/>
+                        <field name="description"/>
+                        <field name="costo"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_clinic_park_procedure_tree" model="ir.ui.view">
+        <field name="name">clinic.park.procedure.tree</field>
+        <field name="model">clinic.park.procedure</field>
+        <field name="arch" type="xml">
+            <tree string="Procedimientos">
+                <field name="procedimiento"/>
+                <field name="description"/>
+                <field name="costo"/>
+            </tree>
+        </field>
+    </record>
