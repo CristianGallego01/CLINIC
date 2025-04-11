@@ -6,7 +6,7 @@ class ClinicParkInvoice(models.Model):
     _description = 'Alta clínica con facturación'
 
     name = fields.Char(string="Nombre del Procedimiento", required=True)
-    patient_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True)
+    patient_id = fields.Many2one('clinic.park.patient', string='Paciente',)
     description = fields.Text(string="Detalle / Insumos / Observaciones")
     total_amount = fields.Float(string="Total a Facturar", required=True)
     invoice_id = fields.Many2one('account.move', string="Factura Generada", readonly=True)
