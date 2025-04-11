@@ -7,7 +7,7 @@
             <form string="Procedimiento">
                 <sheet>
                     <group>
-                        <field name="triage_id"/>
+                        <field name="patient_id" string="Nombre"/>
                         <field name="procedimiento"/>
                         <field name="description"/>
                         <field name="costo"/>
