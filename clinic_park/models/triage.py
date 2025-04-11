@@ -88,7 +88,7 @@ class ClinicParkTriage(models.Model):
 
             # Si se cambia de preparación a otra
             if anterior == 'preparacion' and nueva != 'preparacion':
-                preparacion = self.env['clinic.park.prepared'].search([('triage_id', '=', record.id)])
+                preparacion = self.env['clinic.park.preparation'].search([('triage_id', '=', record.id)])
                 preparacion.unlink()
 
             # Si se cambia a preparación
