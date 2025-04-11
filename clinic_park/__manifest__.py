@@ -1,7 +1,7 @@
 {
     'name': 'clinic_park',
     'version': '1.0.1',
-    'depends': ['base', 'mail'],
+    'depends': ['base', 'mail','web','web_widget_signature'],
     'data': [
         'security/ir.model.access.csv', 
         'views/clinic_park_menus.xml',
