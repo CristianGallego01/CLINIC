@@ -67,4 +67,15 @@
           name="preparacion quirurgica"
           parent="clinic_park_menu_root"
           action="action_clinic_park_preparation"/>
+
+    <record id="action_clinic_park_surgery" model="ir.actions.act_window">
+        <field name="name">Cirugías</field>
+        <field name="res_model">clinic.park.surgery</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú -->
+    <menuitem id="clinic_park_menu_surgery" name="Cirugías"
+              parent="clinic_park_menu_root"
+              action="action_clinic_park_surgery"/>
 </odoo>
