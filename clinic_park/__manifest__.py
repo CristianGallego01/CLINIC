@@ -7,13 +7,14 @@
         'views/clinic_park_menus.xml',
         'views/clinic_park_patient_view.xml',
         'views/clinic_park_triage_view.xml',
+        'views/clinic_park_urgency_view.xml',
         'views/clinic_park_consultations_view.xml',
         'views/clinic_park_procedure_view.xml',
         'views/clinic_park_preparation_view.xml',
         'views/clinic_park_surgery_view.xml',
         'views/clinic_park_recovery_view.xml',
         'views/clinic_park_invoice_view.xml',
-        'views/clinic_park_urgency_view.xml',
+        
 
 
 
