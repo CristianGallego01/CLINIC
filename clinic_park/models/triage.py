@@ -16,7 +16,8 @@ class ClinicParkTriage(models.Model):
     pulso = fields.Integer(string='Pulso', required=True)
     presion = fields.Char(string='Presion', required=True)
     # clasificacion
-    atencion = fields.Selection([  
+    atencion = fields.Selection([ 
+        ('por clasificar', 'Por Clasificar'),
         ('consulta', 'Consulta'),
         ('preparacion', 'Preparación Quirúrgica'),
         ('cirugia', 'Cirugía'),
