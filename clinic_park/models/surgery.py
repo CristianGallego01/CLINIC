@@ -29,6 +29,6 @@ class ClinicParkCirugia(models.Model):
         'context': {
             'default_patient_id': self.patient_id.id,
             'default_anesthesia_type': self.anesthesia_type,
-            'default_procedure_detail': self.procedure_detail,
+            'default_procedure_detail': self.procedure_details,
             }
         }    
