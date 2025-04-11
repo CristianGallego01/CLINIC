@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields,api
 
 class ClinicParkTriage(models.Model):
     _name = 'clinic.park.triage'
@@ -23,3 +23,4 @@ class ClinicParkTriage(models.Model):
         ('recuperacion', 'E.Recuperación y Hospitalización'),
         ('facturacion', 'F.Facturación'),
     ],default="por clasificar",string="clasificacion",copy=False,required=True)
+

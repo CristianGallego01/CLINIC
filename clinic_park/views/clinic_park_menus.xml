@@ -34,4 +34,15 @@
               name="Triage"
               parent="clinic_park_menu_root"
               action="action_clinic_park_triage"/>
+
+    <record id="action_clinic_park_consultation" model="ir.actions.act_window">
+        <field name="name">Consultas</field>
+        <field name="res_model">clinic.park.consultation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_clinic_park_consultation"
+          name="Consultas"
+          parent="clinic_park.menu_clinic_root"
+          action="action_clinic_park_consultation"/>
 </odoo>
