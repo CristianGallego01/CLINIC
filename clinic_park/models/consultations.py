@@ -14,6 +14,7 @@ class ClinicParkConsultation(models.Model):
     # Prescripciones
     tratamiento = fields.Text(string='Tratamiento Prescrito')
     procedimientos = fields.Text(string='Procedimientos Recomendados')
+    historia_clinica = fields.Html(string='Historia Clínica', compute='_compute_historia_clinica', store=False)
 
     def action_ir_a_preparacion(self):
         return {
@@ -47,3 +48,4 @@ class ClinicParkConsultation(models.Model):
     def _onchange_triage_id(self):
         if self.triage_id and self.triage_id.clasificacion == 'consulta':
             self.patient_id = self.triage_id.patient_id
+

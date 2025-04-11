@@ -30,16 +30,4 @@
             </form>
         </field>
     </record>
-    <record id="view_clinic_park_consultations_tree" model="ir.ui.view">
-        <field name="name">clinic.park.consultations.tree</field>
-        <field name="model">clinic.park.consultations</field>
-        <field name="arch" type="xml">
-            <tree string="Consultas">
-                <field name="patient_id"/>
-                <field name="name"/>
-                <field name="tratamiento"/>
-                <field name="procedimientos"/>
-            </tree>
-        </field>
-    </record>
 </odoo>

@@ -3,7 +3,7 @@ from odoo import models, fields
 class ClinicParkPatient(models.Model):
     _name = 'clinic.park.patient'
     _description = 'Paciente'
-
+    # interacción con otros modelos
     triage_id = fields.One2many('clinic.park.triage', 'patient_id', string='Triage')
     consultations_id = fields.One2many('clinic.park.consultations', 'patient_id', string='Consulta')
     procedure_id = fields.One2many('clinic.park.procedure', 'patient_id', string='Procedimiento')
