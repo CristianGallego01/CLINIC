@@ -7,3 +7,4 @@ access_clinic_park_procedure,access.clinic.park.procedure,model_clinic_park_proc
 access_clinic_park_preparation,access.clinic.park.preparation,model_clinic_park_preparation,base.group_user,1,1,1,1
 access_clinic_park_recovery,access.clinic.park.recovery,model_clinic_park_recovery,base.group_user,1,1,1,1
 access_clinic_park_invoice,access.clinic.park.invoice,model_clinic_park_invoice,base.group_user,1,1,1,1
+access_clinic_park_urgency,access.clinic.park.urgency,model_clinic_park_urgency,base.group_user,1,1,1,1

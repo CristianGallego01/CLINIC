@@ -100,5 +100,17 @@
     <menuitem id="clinic_park_menu_invoice" name="alta y facturacion"
               parent="clinic_park_menu_root"
               action="action_clinic_park_invoice"/>
+    
+    <record id="action_clinic_park_urgency" model="ir.actions.act_window">
+        <field name="name">urgencias</field>
+        <field name="res_model">clinic.park.urgency</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú -->
+    <menuitem id="clinic_park_menu_urgency" name="urgencias"
+              parent="clinic_park_menu_root"
+              action="action_clinic_park_urgency"/>
+    
 
 </odoo>

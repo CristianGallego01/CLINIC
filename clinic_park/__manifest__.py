@@ -13,6 +13,7 @@
         'views/clinic_park_surgery_view.xml',
         'views/clinic_park_recovery_view.xml',
         'views/clinic_park_invoice_view.xml',
+        'views/clinic_park_urgency_view.xml',
 
 
 
