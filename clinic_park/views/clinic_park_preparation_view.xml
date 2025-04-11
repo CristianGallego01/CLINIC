@@ -9,11 +9,18 @@
                     <group>
                         <field name="consultation_id"/>
                         <field name="patient_id"/>
-                        <field name="triage_id"/>
                         <field name="preoperative_form"/>
-                        <field name="nurse_signature"/>
-                        <field name="checklist_verified"/>
+                        <field name="nurse_signature" widget="signature"/>
+                        <field name="patient_signature" widget="signature"/>
                         <field name="observations"/>
+                    </group>
+                    <group string="Lista de Chequeo Preoperatoria">
+                        <field name="checklist_consent"/>
+                        <field name="checklist_exams"/>
+                        <field name="checklist_equipment"/>
+                        <field name="checklist_allergies"/>
+                        <field name="checklist_documents"/>
+                        <field name="checklist_verified" readonly="1"/>
                     </group>
                 </sheet>
             </form>
@@ -28,7 +35,6 @@
                 <field name="patient_id"/>
                 <field name="preoperative_form"/>
                 <field name="nurse_signature"/>
-                <field name="checklist_verified"/>
             </tree>
         </field>
     </record>  
