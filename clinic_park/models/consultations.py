@@ -1,7 +1,7 @@
 from odoo import models, fields,api
 
 class ClinicParkConsultation(models.Model):
-    _name = 'clinic.park.consultation'
+    _name = 'clinic.park.consultations'
     _description = 'Consulta'
 
     triage_id = fields.Many2one('clinic.park.triage', string='Triage', required=True, ondelete='cascade')
