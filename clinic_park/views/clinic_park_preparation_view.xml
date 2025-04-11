@@ -16,6 +16,7 @@
                         <field name="nurse_signature" widget="signature"/>
                         <field name="patient_signature" widget="signature"/>
                         <field name="supplies" string="Suministros Quirúrgicos"/>
+                        <field name ="preparation_date" string="Fecha de Preparación Quirúrgica"/>
                     </group>
                     <group string="Lista de Chequeo Preoperatoria">
                         <field name="checklist_consent"/>
