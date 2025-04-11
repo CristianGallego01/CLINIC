@@ -10,6 +10,7 @@ class ClinicParkPatient(models.Model):
     surgery_id = fields.One2many('clinic.park.surgery', 'patient_id', string='Cirugía')
     procedure_id = fields.One2many('clinic.park.procedure', 'patient_id', string='Procedimientos')
     preparation_id = fields.One2many('clinic.park.preparation', 'patient_id', string='Preparación Quirúrgica')
+    recovery_id = fields.One2many('clinic.park.recovery', 'patient_id', string='Recuperación y Hospitalización')    
     # datos de la consulta
     # datos del paciente
     current_date = fields.Date(string='Fecha Actual', default=fields.Date.context_today, required=True)

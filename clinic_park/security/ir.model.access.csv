@@ -5,3 +5,4 @@ access_clinic_park_consultations,access.clinic.park.consultations,model_clinic_p
 access_clinic_park_surgery,access.clinic.park.surgery,model_clinic_park_surgery,base.group_user,1,1,1,1
 access_clinic_park_procedure,access.clinic.park.procedure,model_clinic_park_procedure,base.group_user,1,1,1,1
 access_clinic_park_preparation,access.clinic.park.preparation,model_clinic_park_preparation,base.group_user,1,1,1,1
+access_clinic_park_recovery,access.clinic.park.recovery,model_clinic_park_recovery,base.group_user,1,1,1,1
