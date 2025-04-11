@@ -16,10 +16,10 @@ class ClinicParkTriage(models.Model):
     presion = fields.Char(string='Presion', required=True)
     # clasificacion
     atencion = fields.Selection([ 
-        ('por clasificar', '0.Por Clasificar'),
-        ('consulta', '1.Consulta'),
-        ('preparacion', '2.Preparación Quirúrgica'),
-        ('cirugia', '3.Cirugía'),
-        ('recuperacion', '4.Recuperación y Hospitalización'),
-        ('facturacion', '5.Facturación'),
+        ('por clasificar', 'A.Por Clasificar'),
+        ('consulta', 'B.Consulta'),
+        ('preparacion', 'C.Preparación Quirúrgica'),
+        ('cirugia', 'D.Cirugía'),
+        ('recuperacion', 'E.Recuperación y Hospitalización'),
+        ('facturacion', 'F.Facturación'),
     ],default="por clasificar",string="clasificacion",copy=False,required=True)
