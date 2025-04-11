@@ -22,4 +22,4 @@ class ClinicParkTriage(models.Model):
         ('cirugia', 'Cirugía'),
         ('recuperacion', 'Recuperación y Hospitalización'),
         ('facturacion', 'Facturación'),
-    ],string="clasificacion",copy=False,required=True)
+    ],default="por clasificar",string="clasificacion",copy=False,required=True)
