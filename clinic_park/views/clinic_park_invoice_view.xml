@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <record id="clinic_park_invoice_form_view" model="ir.ui.view">
-        <field name="name">clinic.invoice.form</field>
-        <field name="model">clinic.invoice</field>
+        <field name="name">clinic.park.invoice.form</field>
+        <field name="model">clinic.park.invoice</field>
         <field name="arch" type="xml">
             <form string="Alta Clínica con Facturación">
                 <header>
