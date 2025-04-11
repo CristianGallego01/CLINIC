@@ -29,13 +29,13 @@ class ClinicParkTriage(models.Model):
     @api.model
     def create(self, vals):
         record = super().create(vals)
-        if vals.get('clasificacion') == 'consulta':
+        if vals.get('atencion') == 'consulta':
             record._crear_consulta_si_aplica()
         return record
 
     def write(self, vals):
         res = super().write(vals)
-        if 'clasificacion' in vals and vals['clasificacion'] == 'consulta':
+        if 'atencion' in vals and vals['atencion'] == 'consulta':
             for record in self:
                 record._crear_consulta_si_aplica()
         return res
