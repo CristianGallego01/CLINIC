@@ -6,8 +6,8 @@
         <field name="arch" type="xml">
             <form string="Alta Clínica con Facturación">
                 <header>
-                    <button name="action_create_invoice" type="object" string="Generar Factura" class="btn-primary" attrs="{'invisible': [('state','=','invoiced')]}"/>
-                    <button name="action_view_invoice" type="object" string="Ver Factura" class="btn-secondary" attrs="{'invisible': [('invoice_id','=',False)]}"/>
+                    <button name="action_create_invoice" type="object" string="Generar Factura" class="btn-primary"/>
+                    <button name="action_view_invoice" type="object" string="Ver Factura" class="btn-secondary"/>
                 </header>
                 <sheet>
                     <group>
