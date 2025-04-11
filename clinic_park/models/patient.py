@@ -25,4 +25,4 @@ class ClinicParkPatient(models.Model):
     # datos acompañante
     companion = fields.Char(string='Acompañante')
     companion_phone = fields.Char(string='Telefono Acompañante')
-    siganture = fields.Binary(string='Firma')
+    signature = fields.Binary(string='Firma')

@@ -16,7 +16,7 @@
                         <field name="address"/>
                         <field name="birth_date"/>
                         <field name="reason"/>
-                        <field name="siganture" widget="siganture"/>
+                        <field name="signature" widget="signature"/>
                     </group>
                     <group string="Acompañante">
                         <field name="companion"/>
