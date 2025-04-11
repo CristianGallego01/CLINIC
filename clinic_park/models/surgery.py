@@ -18,3 +18,17 @@ class ClinicParkCirugia(models.Model):
         ('general', 'General'),
         ('local', 'Local'),
     ], string='Tipo de Anestesia', required=True)
+
+    def action_ir_a_recuperacion(self):
+        return {
+        'type': 'ir.actions.act_window',
+        'name': 'Recuperación',
+        'res_model': 'clinic.park.recovery',
+        'view_mode': 'form',
+        'target': 'current',
+        'context': {
+            'default_patient_id': self.patient_id.id,
+            'default_anesthesia_type': self.anesthesia_type,
+            'default_procedure_detail': self.procedure_detail,
+            }
+        }    
