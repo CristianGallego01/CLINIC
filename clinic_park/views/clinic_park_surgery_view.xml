@@ -9,7 +9,6 @@
 
                 <sheet>
                     <group>
-                        <field name="triage_id"/>
                         <field name="patient_id"/>
                         <field name="dni"/>
                         <field name="surgery_date"/>
