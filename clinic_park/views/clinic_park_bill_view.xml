@@ -45,13 +45,4 @@
             </tree>
         </field>
     </record>
-
-    <record id="action_clinic_park_billing" model="ir.actions.act_window">
-        <field name="name">Altas y Facturación</field>
-        <field name="res_model">clinic.park.billing</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="menu_clinic_park_billing_root" name="Facturación Clínica" parent="clinic_park.menu_root" sequence="90"/>
-    <menuitem id="menu_clinic_park_billing" name="Altas y Facturación" parent="menu_clinic_park_billing_root" action="action_clinic_park_billing"/>
 </odoo>
