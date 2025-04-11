@@ -7,7 +7,7 @@
         'views/clinic_park_menus.xml',
         'views/clinic_park_patient_view.xml',
         'views/clinic_park_triage_view.xml',
-        'views/clinic_park_consultation_view.xml',
+        'views/clinic_park_consultations_view.xml',
 
 
 
