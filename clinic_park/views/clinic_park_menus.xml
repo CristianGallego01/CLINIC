@@ -81,12 +81,12 @@
 
         <record id="action_clinic_park_recovery" model="ir.actions.act_window">
         <field name="name">recuperacion</field>
-        <field name="res_model">clinic.park.recvery</field>
+        <field name="res_model">clinic.park.recovery</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <!-- Menú -->
     <menuitem id="clinic_park_menu_recovery" name="recuperacion"
               parent="clinic_park_menu_root"
-              action="action_clinic_park_recuperacion"/>
+              action="action_clinic_park_recovery"/>
 </odoo>
