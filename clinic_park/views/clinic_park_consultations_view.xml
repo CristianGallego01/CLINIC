@@ -7,7 +7,7 @@
             <form string="Consulta">
                 <header>
                     <button name="action_ir_a_preparacion"
-                            string="Ir a Cirugía"
+                            string="Ir a preparación"
                             type="object"
                             class="btn-primary"
                             icon="fa-heartbeat"/>

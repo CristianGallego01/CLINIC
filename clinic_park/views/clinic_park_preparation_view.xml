@@ -7,6 +7,7 @@
             <form string="Preparación Quirúrgica">
                 <header>
                     <button name="action_ir_a_cirugia"
+                            string="Ir a Cirugía"
                             type="object"
                             string="Ir a Cirugía"
                             class="btn-primary"
