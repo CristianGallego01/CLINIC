@@ -2,7 +2,7 @@ from odoo import models, fields
 from odoo.exceptions import UserError
 
 class ClinicParkInvoice(models.Model):
-    _name = 'clinic.invoice'
+    _name = 'clinic.park.invoice'
     _description = 'Alta clínica con facturación'
 
     name = fields.Char(string="Nombre del Procedimiento", required=True)
