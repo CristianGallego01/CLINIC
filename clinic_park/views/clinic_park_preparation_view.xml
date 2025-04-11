@@ -8,6 +8,7 @@
                 <header> 
                 <!-- boton para ir a la cirugía -->
                     <button name="action_ir_a_cirugia" string="Ir a Cirugía" type="object" class="btn-primary" icon="fa-heartbeat"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="consultation_id"/>
