@@ -31,10 +31,8 @@
         <field name="model">clinic.park.preparation</field>
         <field name="arch" type="xml">
             <tree string="Preparaciones Quirúrgicas">
-                <field name="consultation_id"/>
                 <field name="patient_id"/>
-                <field name="preoperative_form"/>
-                <field name="nurse_signature"/>
+                <field name="preparation_date"/>
             </tree>
         </field>
     </record>  

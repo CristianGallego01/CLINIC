@@ -10,7 +10,7 @@ class ClinicParkPreparation(models.Model):
 
     preoperative_form = fields.Text(string='Formulario Preoperatorio', required=True)
     supplies = fields.Text(string='Insumos Utilizados', required=True)
-    nurse_signature = fields.Binary(string='Firma del Paciente',)
+    nurse_signature = fields.Binary(string='Firma de enfermeria')
     checklist_consent = fields.Boolean(string='Consentimiento informado firmado')
     checklist_exams = fields.Boolean(string='Exámenes preoperatorios revisados')
     checklist_equipment = fields.Boolean(string='Equipo quirúrgico preparado')
