@@ -7,6 +7,7 @@
             <form string="Procedimiento">
                 <sheet>
                     <group>
+                        <field name="name" string="nombre paciente"/>
                         <field name="procedimiento"/>
                         <field name="description"/>
                         <field name="costo"/>

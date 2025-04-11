@@ -4,6 +4,8 @@ class ClinicParkConsultation(models.Model):
     _name = 'clinic.park.consultations'
     _description = 'Consulta'
 
+    procedure_id = fields.One2many('clinic.park.procedure', 'consultations_id', string='Procedimientos')
+
     triage_id = fields.Many2one('clinic.park.triage', string='Triage', required=True, ondelete='cascade')
     patient_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True)
     name = fields.Char(string='Nombre', related='patient_id.name', store=True)
