@@ -10,5 +10,5 @@ class ClinicParkProcedure(models.Model):
     dni = fields.Char(string='Cedula', related='patient_id.dni', store=True)
     procedimiento = fields.Text(string='Procedimiento',related="consultations_id.procedimientos", required=True)
     procedure_date = fields.Datetime(string='Fecha del Procedimiento', required=True)
-    descripcion = fields.Text(string='Descripción del Procedimiento')
+    description = fields.Text(string='Descripción del Procedimiento')
     costo = fields.Float(string='Costo', required=True)
