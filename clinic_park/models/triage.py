@@ -3,7 +3,6 @@ from odoo import models, fields
 class ClinicParkTriage(models.Model):
     _name = 'clinic.park.triage'
     _description = 'Triage'
-    _inherit = ['mail.thread']
 
     patient_id = fields.Many2one('clinic.park.patient', string='Paciente', required=True, ondelete='cascade')
     current_date= fields.Date(string='Fecha', default=fields.Date.context_today, required=True)
