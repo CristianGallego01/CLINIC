@@ -35,9 +35,9 @@
               parent="clinic_park_menu_root"
               action="action_clinic_park_triage"/>
 
-    <record id="action_clinic_park_consultation" model="ir.actions.act_window">
+    <record id="action_clinic_park_consultations" model="ir.actions.act_window">
         <field name="name">Consultas</field>
-        <field name="res_model">clinic.park.consultation</field>
+        <field name="res_model">clinic.park.consultations</field>
         <field name="view_mode">tree,form</field>
     </record>
 
